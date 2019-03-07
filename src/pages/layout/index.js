@@ -1,22 +1,26 @@
 import React,{Component} from "react";
-import {Flex,NavBar,Icon} from "antd-mobile";
+import {Route,Switch} from "react-router-dom";
+import Header from "../header";
+import Footer from "../footer";
+import Postage from "../postage";
+import Download from "../download";
+import Concatus from "../concatus";
+
 export default class Layout extends Component{
     render(){
         return(
-            <Flex direction={'column'}>
-                <NavBar
-                    mode="light"
-                    icon={<Icon type="left" />}
-                    onLeftClick={() => console.log('onLeftClick')}
-                    rightContent={[
-                        <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
-                        <Icon key="1" type="ellipsis" />,
-                    ]}
-                >
-                    NavBar
-                </NavBar>
-                <div className='tx1' style={{background:'red'}}>asd</div>
-            </Flex>
+            <div className='layout'>
+                <Header/>
+                <div className='body'>
+                    <Switch>
+                        <Route exact path='/' component={Postage}/>
+                        <Route path='/postage' component={Postage} />
+                        <Route path='/download' component={Download} />
+                        <Route path='/concatus' component={Concatus} />
+                    </Switch>
+                    <Footer/>
+                </div>
+            </div>
         )
     }
 }

@@ -1,0 +1,195 @@
+.postage{
+    width: 100%;
+    .banner{
+        width: 100%;
+        height: 420px;
+        background-image: url(../../img/postage/banner.png);
+        .bg();
+    }
+    // 套餐列表
+    .type{
+        // box-sizing: border-box;
+        // padding: 0 35px;
+        margin-top: 48px;
+        .content{
+            .left{
+                .title{
+                    width: 194px;
+                    height: 38px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 500;
+                    font-size: 24px;
+                    background-image: url(../../img/postage/border.png);
+                    .bg();
+                }
+                img{
+                    margin-top: 29px;
+                    width: 237px;
+                    height: 250px;
+                }
+            }
+            .right{
+                box-sizing: border-box;
+                padding-top: 6px;
+                margin-left: 80px;
+                div{
+                    width: 364px;
+                    height: 104px;
+                    border:1px solid #C4C4C4;
+                    justify-content: center;
+                    align-items: center;
+                    &:not(first-of-type){
+                        margin-top: 19px;
+                    }
+                    h5{
+                        position: relative;
+                        &::before{
+                            content: '';
+                            border-bottom: 1px solid #C4C4C4;
+                            width: 12px;
+                            height: 1px;
+                            display: inline-block;
+                            position: absolute;
+                            top: 30px;
+                            left: 50%;
+                            margin-left: -6px;
+                        }
+                        span{
+                            color: #FFD614;
+                            font-size: 22px;
+                        }
+                        b{
+                            color: #FFD614;
+                            font-size: 14px;
+                        }
+                    }
+                    p{
+                        margin-top: 16px;
+                        font-size: 20px;
+                        color: #4C4C4C;
+                        span{
+                            position: relative;
+                            &::before{
+                                content: '';
+                                border-bottom: 1px solid #ff0000;
+                                width: 100%;
+                                height: 1px;
+                                display: inline-block;
+                                position: absolute;
+                                top: 12px;
+                            }
+                        }
+                        b{
+                            color: #FFD930;
+                        }
+                    }
+                }
+            }
+        }
+        .btn{
+            width: 159px;
+            height: 46px;
+            margin-top: 47px;
+            background-image: url(../../img/postage/btn.png);
+            .bg();
+        }
+    }
+    // 加速效果
+    .effect{
+        border:1px solid #C4C4C4;
+        margin: 58px auto 55px;
+        box-sizing: border-box;
+        width: 680px;
+        height: 498px;
+        padding: 34px 36px 60px;
+        .title{
+            width: 119px;
+            height: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            font-size: 24px;
+            background-image: url(../../img/postage/border.png);
+            .bg();
+        }
+        .content{
+            padding-top: 40px;
+            &>div{
+                h4{
+                    font-size: 18px;
+                    font-weight: normal;
+                    align-self: flex-start;
+                }
+                img{
+                    width: 296px;
+                    height: 138px;
+                    &:first-of-type{
+                        margin-top: 18px;
+                        margin-bottom: 33px;
+                    }
+                }
+            }
+            .right{}
+        }
+    }
+}
+
+//0.8533333333333333
+@media screen and ( max-width: 640px ) {
+    .postage{
+        .banner{
+            height: 358.4px;
+        }
+        // 套餐列表
+        .type{
+            .content{
+                .left{
+                    .title{
+                        width: 194px;
+                        height: 38px;
+                    }
+                    img{
+                        margin-top: 29px;
+                        width: 202.24px;
+                        height: 213.3333333333333px;
+                    }
+                }
+                .right{
+                    margin-left: 40px;
+                }
+            }
+        }
+        // 加速效果
+        .effect{
+            margin: 28px auto 25px;
+            width: 580px;
+            height: 424px;
+            padding: 10px 20px 30px;
+            .content{
+                padding-top: 20px;
+                &>div{
+                    img{
+                        width: 252px;
+                        height: 117px;
+                        &:first-of-type{
+                            margin-top: 10px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+                .right{}
+            }
+        }
+    }
+}
+//1.104
+@media screen and ( min-width: 828px ) {
+    .postage{
+        .banner{
+            height: 463px;
+        }
+    }
+}

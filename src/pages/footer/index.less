@@ -1,0 +1,30 @@
+.footer{
+    width: 100%;
+    height: 206px;
+    background: #31343F;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: #fff;
+        font-size: 18px;
+        &:not(first-of-type){
+            margin-top: 36px;
+        }
+        a{
+            color: #fff;
+
+        }
+    }
+}
+
+// 320
+@media screen and ( max-width: 640px ) {
+    .footer{
+        p{
+            font-size: 16px;
+        }
+    }
+}
+// 414
+@media screen and ( min-width: 828px ) {
+}

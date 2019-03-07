@@ -28,7 +28,7 @@ export default win.flex = (baseFontSize, fontscale) => {
   }
   metaEl.setAttribute('content', `width=device-width,user-scalable=no,initial-scale=${scale},maximum-scale=${scale},minimum-scale=${scale}`);
   doc.documentElement.style.fontSize = `${_baseFontSize / 2 * dpr * _fontscale}px`;
-  console.log( doc.documentElement.style.fontSize)
+  // console.log( doc.documentElement.style.fontSize)
 };
 
 

@@ -341,7 +341,7 @@ module.exports = {
     new ImageminPlugin({
       disable: process.env.NODE_ENV !== 'production', 
       pngquant: {
-        quality: '10-20'
+        // quality: '10-20'
       }
     }),
     new CompressionPlugin({
